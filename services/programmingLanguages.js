@@ -21,7 +21,7 @@ async function create(programmingLanguage){
       `INSERT INTO programming_languages 
       (name, released_year, githut_rank, pypl_rank, tiobe_rank) 
       VALUES 
-      (${programmingLanguage.name}, ${programmingLanguage.released_year}, ${programmingLanguage.githut_rank}, ${programmingLanguage.pypl_rank}, ${programmingLanguage.tiobe_rank})`
+      ("${programmingLanguage.name}", ${programmingLanguage.released_year}, ${programmingLanguage.githut_rank}, ${programmingLanguage.pypl_rank}, ${programmingLanguage.tiobe_rank})`
     );
   
     let message = 'Error in creating programming language';
